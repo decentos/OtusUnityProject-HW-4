@@ -9,12 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 934150d54eb641849962a821dad43cb2, type: 3}
-  m_Name: EnemySettings
+  m_Script: {fileID: 11500000, guid: 916c80ca1af66b41a8da69d482a0b37a, type: 3}
+  m_Name: EnviromentData
   m_EditorClassIdentifier: 
-  _enemyInfo:
-  - Type: 1
-    EnemyPrefab: {fileID: 3096957991915214441, guid: e16bb1bf40bc0f44a996015110f098b3,
-      type: 3}
-  _enemySpawnIntervalTime: 1
-  _maxEnemiesInPool: 20
+  spaceParticle: {fileID: 5844728410194450557, guid: cea02440e5e266b78a3b6df46702ab68,
+    type: 3}

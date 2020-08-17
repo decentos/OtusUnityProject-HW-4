@@ -3,9 +3,9 @@ using UnityEngine;
 
 namespace MVCExample
 {
-    public sealed class PCInputVertical : IUserInputProxy
+    public sealed class PCInputVertical : IUserInputProxy<float>
     {
-        public event Action<float> AxisOnChange = delegate(float f) {  };
+        public event Action<float> AxisOnChange = delegate(float t) {  };
         
         public void GetAxis()
         {
