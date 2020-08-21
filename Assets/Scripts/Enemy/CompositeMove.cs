@@ -5,7 +5,8 @@ namespace MVCExample
 {
     public sealed class CompositeMove : IMove
     {
-        private List<IMove> _moves = new List<IMove>();
+        private readonly List<IMove> _moves = new List<IMove>();
+        public bool IsEmpty => _moves.Count == 0;
 
         public void AddUnit(IMove unit)
         {
@@ -17,12 +18,12 @@ namespace MVCExample
             _moves.Remove(unit);
         }
 
-        
+
         public void Move(Vector3 point)
         {
-            for (var i = 0; i < _moves.Count; i++)
+            foreach (var t in _moves)
             {
-                _moves[i].Move(point);
+                t.Move(point);
             }
         }
     }

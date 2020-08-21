@@ -13,6 +13,7 @@ namespace MVCExample
         public static GameObject AddRigidbody2D(this GameObject gameObject, float mass)
         {
             var component = gameObject.GetOrAddComponent<Rigidbody2D>();
+            component.simulated = false;
             component.mass = mass;
             return gameObject;
         }
@@ -25,7 +26,8 @@ namespace MVCExample
 
         public static GameObject AddCircleCollider2D(this GameObject gameObject)
         {
-            gameObject.GetOrAddComponent<CircleCollider2D>();
+            var component = gameObject.GetOrAddComponent<CircleCollider2D>();
+            component.isTrigger = true;
             return gameObject;
         }
 

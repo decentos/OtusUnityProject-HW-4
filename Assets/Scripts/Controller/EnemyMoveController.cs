@@ -15,7 +15,7 @@ namespace MVCExample
 
         public void Execute(float deltaTime)
         {
-            _move.Move(_target.localPosition);
+            _move.Move(_target.position);
         }
     }
 }

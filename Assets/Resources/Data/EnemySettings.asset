@@ -12,7 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 934150d54eb641849962a821dad43cb2, type: 3}
   m_Name: EnemySettings
   m_EditorClassIdentifier: 
-  _enemyInfos:
+  _enemyInfo:
   - Type: 1
     EnemyPrefab: {fileID: 3096957991915214441, guid: e16bb1bf40bc0f44a996015110f098b3,
       type: 3}
+  _enemySpawnIntervalTime: 1
+  _maxEnemiesInPool: 20
